@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Restaurant</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="nav">
+        <img src="Logo.png" alt="logo" class="logo">
+        <nav class="navbar">
+        <div class="button1">
+            <h1 class="sous-title"><a href="reserver.html">Reserver</a></h1>
+        </div>
+        <div class="button2">
+            <h2 class="sous-title"><a href="menu.html">Menu</a></h2>
+        </div>
+        <div class="button3">
+            <h3 class="sous-title"><a href="contact.html">Contact</a></h3>
+        </div>
+        </nav>
+        </header>
+        <img src="burger-bar.png" alt="menuburger" class="menuburger">
+        <div class="container">
+            <div class="text">
+                <h4 class="sous-title1">Nourriture Délicieuse,</h4>
+                <h5 class="sous-title2">Vie Délicieuse</h5>
+            <div class="button4">
+                <h6 class="sous-title">Reserve</h6>
+            </div>
+            </div>
+            <div class="image">
+                <img src="Ellipse 2.png" alt="ellipse">
+            </div>
+        </div> 
+        <script>const menuburger = document.querySelector(".menuburger")
+            const navbar = document.querySelector(".navbar")
+    
+            menuburger.addEventListener('click',()=>{
+            navbar.classList.toggle('mobileMenu')
+            })
+        </script>
+    </body>
+</html>

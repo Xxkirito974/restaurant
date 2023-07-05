@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Restaurant</title>
+        <link href="style3.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="nav">
+        <img src="Logo.png" alt="logo" class="logo">
+        <nav class="navbar">
+        <div class="button1">
+            <h1 class="sous-title"><a href="reserver.html">Reserver</a></h1>
+        </div>
+        <div class="button2">
+            <h2 class="sous-title"><a href="menu.html">Menu</a></h2>
+        </div>
+        <div class="button3">
+            <h3 class="sous-title"><a href="contact.html">Contact</a></h3>
+        </div>
+        </nav>
+        </header>
+        <div class="container">
+            <h1>Formulaire de Reservation</h1>
+            <form action="formulaire.php">
+              <label for="fname">Nom & prénom</label>
+              <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+          
+              <label for="sujet">Date de reservation</label>
+              <input type="text" id="reservation" name="reservation" placeholder="La reservation">
+                
+              <label for="appt">Choisissez une heure pour votre reservation</label>
+              <input type="time" id="appt" name="appt" min="12:00" max="21:00" required>
+
+              <label for="emailAddress">Email</label>
+              <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+          
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+              <input type="submit" value="Envoyer">
+            </form>
+        </div>
+        <img src="burger-bar.png" alt="menuburger" class="menuburger">
+        <script>
+            const menuburger = document.querySelector(".menuburger")
+            const navbar = document.querySelector(".navbar")
+    
+            menuburger.addEventListener('click',()=>{
+            navbar.classList.toggle('mobileMenu')
+            })
+        </script>
+    </body>
+</html>

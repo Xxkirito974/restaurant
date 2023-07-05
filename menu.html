@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Menu</title>
+        <link href="style1.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="nav">
+        <img src="Logo.png" alt="logo" class="logo">
+        <nav class="navbar">
+        <div class="button1">
+            <h1 class="sous-title"><a href="reserver.html">Reserver</a></h1>
+        </div>
+        <div class="button2">
+            <h2 class="sous-title"><a href="menu.html">Menu</a></h2>
+        </div>
+        <div class="button3">
+            <h3 class="sous-title"><a href="contact.html">Contact</a></h3>
+        </div>
+        </nav>
+        </header>
+        <img src="burger-bar.png" alt="menuburger" class="menuburger">
+    <section class="menu">
+        <div class="nourriture1">
+            <div class="nourriture2">
+                <img src="patecarbo.jpg" alt="patecarbo">
+                    <h4>Les pâtes carbonara</h4>
+                    <p>18€50</p>
+                    <a href="#">Commander</a>
+            </div>
+
+            <div class="nourriture2">
+                <img src="Burgerboeuf.jpg" alt="burgerboeuf">
+                    <h4>Burger boeuf</h4>
+                    <p>16€50</p>
+                    <a href="#">Commander</a>
+            </div>
+
+            <div class="nourriture2">
+                <img src="flammenkuche.jpg" alt="flammenkuche">
+                    <h4>Flammenkueche classique</h4>
+                    <p>13€50</p>
+                    <a href="#">Commander</a>
+                </div>
+
+                <div class="nourriture2">
+                    <img src="saladepasta.jpg" alt="salade pasta">
+                        <h4>Salade Pasta</h4>
+                        <p>13€50</p>
+                        <a href="#">Commander</a>
+                </div>
+            </div>
+    </section>
+    <script>const menuburger = document.querySelector(".menuburger")
+        const navbar = document.querySelector(".navbar")
+
+        menuburger.addEventListener('click',()=>{
+        navbar.classList.toggle('mobileMenu')
+        })
+    </script>
+    </body>
+</html>
